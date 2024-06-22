@@ -88,6 +88,9 @@ const ChatScreen: React.FC = () => {
             .catch(() => {
               console.log("error");
             });
+        }else{
+          seterror('No matching found')
+          setreciepedata('')
         }
       })
       .catch(() => {
